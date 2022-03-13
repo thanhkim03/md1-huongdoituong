@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1200" height="600" style="border:1px solid #FF66FF;"></canvas>
+<script>
+let c = document.getElementById('myCanvas');
+let ctx = c.getContext('2d')
+ctx.beginPath();
+ctx.rect(0,0,200,100)
+ctx.stroke();
+ctx.beginPath()
+ctx.arc(100,150,50,0,2*Math.PI,true);
+ctx.stroke();
+ctx.beginPath();
+ctx.rect(1000,0,200,100)
+ctx.stroke();
+ctx.beginPath()
+ctx.arc(1100,150,50,0,2*Math.PI,true);
+ctx.stroke();
+ctx.beginPath();
+ctx.rect(0,500,200,100)
+ctx.stroke();
+ctx.beginPath()
+ctx.arc(100,450,50,0,2*Math.PI,true);
+ctx.stroke();
+ctx.beginPath();
+ctx.rect(1000,500,200,100)
+ctx.stroke();
+ctx.beginPath()
+ctx.arc(1100,450,50,0,2*Math.PI,true);
+ctx.stroke();
+</script>
+</body>
+</html>

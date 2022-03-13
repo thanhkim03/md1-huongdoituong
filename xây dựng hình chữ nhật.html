@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<canvas id="myCanvas" width="300" height="300" style="border:1px solid #FF66FF;"></canvas>
+<body>
+<script>
+    // function hinhChuNhat(a,b) {
+    //     this.a =a;
+    //     this.b =b;
+    //     this.getarea = function (){
+    //         return this.a*this.b
+    //     }
+    //     this.getarra = function (){
+    //         return 2*(a+b)
+    //     }
+    // }
+    class hinhChuNhat{
+        dai;
+        rong;
+        constructor(a,b) {
+            this.dai=a
+            this.rong=b
+        }  chuVi (){
+           alert("chu vi bằng "+2*(this.dai+this.rong))
+        }
+        dientich (){
+            alert("diện tích bằng"+this.dai*this.rong)
+        }
+    }
+    let c = new hinhChuNhat (2,4)
+    c.chuVi()
+    c.dientich()
+    let d =document.getElementById("myCanvas")
+    let ctx = d.getContext('2d');
+    ctx.fillStyle='#FF66FF';
+    ctx.fillRect(0,0,200,100);
+</script>
+</body>
+</html>
